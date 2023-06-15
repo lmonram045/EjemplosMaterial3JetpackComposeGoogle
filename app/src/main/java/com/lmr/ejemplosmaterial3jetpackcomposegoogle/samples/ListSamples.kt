@@ -22,7 +22,7 @@ import androidx.compose.ui.tooling.preview.Preview
 fun OneLineListItem() {
     Column {
         ListItem(
-            headlineText = { Text("One line list item with 24x24 icon") },
+            headlineContent = { Text("One line list item with 24x24 icon") },
             leadingContent = {
                 Icon(
                     Icons.Filled.Favorite,
@@ -45,8 +45,8 @@ fun OneLineListItem() {
 fun TwoLineListItem() {
     Column {
         ListItem(
-            headlineText = { Text("Two line list item with trailing") },
-            supportingText = { Text("Secondary text") },
+            headlineContent = { Text("Two line list item with trailing") },
+            supportingContent = { Text("Secondary text") },
             trailingContent = { Text("meta") },
             leadingContent = {
                 Icon(
@@ -71,9 +71,9 @@ fun TwoLineListItem() {
 fun ThreeLineListItemWithOverlineAndSupporting() {
     Column {
         ListItem(
-            headlineText = { Text("Three line list item") },
-            overlineText = { Text("OVERLINE") },
-            supportingText = { Text("Secondary text") },
+            headlineContent = { Text("Three line list item") },
+            overlineContent = { Text("OVERLINE") },
+            supportingContent = { Text("Secondary text") },
             leadingContent = {
                 Icon(
                     Icons.Filled.Favorite,
@@ -93,8 +93,8 @@ fun ThreeLineListItemWithOverlineAndSupporting() {
 fun ThreeLineListItemWithExtendedSupporting() {
     Column {
         ListItem(
-            headlineText = { Text("Three line list item") },
-            supportingText = {
+            headlineContent = { Text("Three line list item") },
+            supportingContent = {
                 Text("Secondary text that is long and perhaps goes onto another line")
             },
             leadingContent = {
